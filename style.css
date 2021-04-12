@@ -1,0 +1,139 @@
+
+body{
+    background-color: black !important;
+    min-height: 200vh;
+}
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   transition: 0.6s;
+   padding: 40px 100px;
+   z-index: 1;
+
+}
+header.sticky{
+    padding: 8px 100px;
+    height: 70px;
+    background: #fff !important;
+}
+.nadpis
+{
+    position: absolute;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    bottom: 30px;
+    transform: translateX(100px);
+    font-size: 2em;
+    letter-spacing: 3px;
+    transition: 0.6s;
+
+}
+.avatar{
+    position: relative;
+    top: -13.5px;
+    width: 90px;
+    padding: 10px;
+    transition: 0.6s;
+}
+.navbar-links {
+    height: 100%;
+}
+.navbar-links ul{
+    display: flex;
+
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a{
+    position: relative;
+    display: block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    bottom: 5px;
+    letter-spacing: 4px;
+    transition: 0.6s;
+}
+.banner{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/brazil.jpg);
+  background-size: cover;
+  background-position-y: 80%;
+  
+}
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000;
+}
+
+.toggle-button {
+    position: absolute;
+    display: none;
+    top: 16.5px;
+    right: -80px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+}
+
+@media (max-width: 1050px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+        color: #000;
+        z-index: 1;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+        margin-left: -55%;
+        transform: translateX(70px);
+        bottom: 45px;
+        
+        
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .navbar .avatar{
+        margin-left:  -85%;
+    }
+    .navbar .nadpis{
+        margin-left: -55%;
+        bottom: 70.5px;
+        position: relative;
+    }
+}
