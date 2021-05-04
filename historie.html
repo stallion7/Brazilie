@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="historie.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 
 <body>
@@ -42,7 +43,7 @@
         <h1 class="text-center p-3 my-4 display-3">Historie</h1>
         <h2 class="col-xl-4 text-center my-4">Dějiny Brazílie</h2>
         <div class="text-center col-xl-10 mx-auto">
-          <p>Počínají příchodem prvních obyvatel asi <b>10 000 let př. n. l.</b> Evropané
+          <p id="p">Počínají příchodem prvních obyvatel asi <b>10 000 let př. n. l.</b> Evropané
             dorazili do Brazílie na
             počátku 16. století. První Evropan, který kolonizoval dnešní území Brazilské federativní republiky na
             jihoamerickém kontinentu byl <b>Pedro Álvares Cabral</b> (1467–1520) dne <b>22. dubna 1500</b> pod záštitou
@@ -58,7 +59,7 @@
         </div>
         <h2 class="col-xl-4 text-center my-4">Vznik republiky</h2>
         <div class="text-center col-xl-10 mx-auto">
-          <p>Za napoleonských válek roku <b>1807</b> uprchl do Brazílie portugalský <b>dvůr</b> v čele <b>s králem Janem
+          <p id="p">Za napoleonských válek roku <b>1807</b> uprchl do Brazílie portugalský <b>dvůr</b> v čele <b>s králem Janem
               VI.</b>, který zde
             vládl <b>13</b> let. V roce <b>1815</b> byla zrušena kolonie a vyhlášeno <b>Spojené království
               Portugalska</b>, Brazílie a
@@ -72,7 +73,7 @@
         </div>
         <h2 class="col-xl-4 text-center my-4">Etymologie</h2>
         <div class="text-center col-xl-10 mx-auto">
-          <p><b>Slovo brasil</b> pochází z portugalského označení stromu <b>paubrasilia echinata</b> (sapan ježatý), což je endemit
+          <p id="p"><b>Slovo brasil</b> pochází z portugalského označení stromu <b>paubrasilia echinata</b> (sapan ježatý), což je endemit
             <b>Atlantického lesa</b>, jenž se rozprostírá na <b>východě Brazílie</b>, u pobřeží <b>Atlantského oceánu</b>. Jméno stromu pak
             vzniklo ze slova <b>brasa</b> označujícího <b>žhavý popel</b>, což odkazuje k červené barvě, neboť <b>červené barvivo</b> se z
             toho stromu získávalo a šlo o vůbec <b>první</b> průmyslový <b>produkt</b>, který byl z Brazílie, od <b>16. století</b>, vyvážen
@@ -81,9 +82,34 @@
       </main>
     </div>
   </div>
+  <div class="container">
+      <h1 class="text-center p-3 my-4 display-3">Osobnosti</h1>
+    <div class="row">
+      <div class="col-xl-3 text-center" id="postavy">  
+          <div id="list-group" class="list-group">
+          </div>
+        </div>
+        <div class="col-xl-9">
+          <div id="portret">
+          <div class="card">
+            <div class="card-header">
+              Header
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Title</h4>
+              <p id="text" class="card-text">Text</p>
+            </div>
+          </div>
+          <div class="row gallery">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer class="container-fluid">
     <div class="jumbotron text-center p-3 my-3 col-sm-10 mx-auto" id="footer">
-      &copy; 2021 - <b>SŠPU Opava</b> - Štěpán Krautwurst
+      &copy; 2021 - <b>SŠPU Opava</b> - Štěpán Krautwurst -
+      <a id="wikipedie" href="https://cs.wikipedia.org/wiki/D%C4%9Bjiny_Braz%C3%ADlie"><img id="wiki" src="img/wikipedie.png" alt=""><i class="fa">Wikipedie</i></a>
     </div>
   </footer>
   <!-- Optional JavaScript -->
@@ -91,6 +117,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>
