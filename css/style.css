@@ -1,6 +1,7 @@
+
 body{
-    background-color: #fff !important;
-    min-height: 150vh;
+    background-color: white !important;
+    min-height: 200vh;
 }
 header{
    position: fixed;
@@ -23,7 +24,7 @@ header.sticky{
 {
     position: absolute;
     font-weight: 700;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     bottom: 30px;
     transform: translateX(100px);
@@ -54,7 +55,7 @@ header.sticky{
     display: block;
     margin: 0 15px;
     text-decoration: none;
-    color: #fff;
+    color: #000;
     bottom: 5px;
     letter-spacing: 4px;
     transition: 0.6s;
@@ -62,11 +63,11 @@ header.sticky{
 .banner{
   position: relative;
   width: 100%;
-  height: 50vh;
-  background-image: url(img/historie.jpg);
-  background-color: #fff;
+  height: 100vh;
+  background-image: url(../img/brazil.jpg);
   background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-position-y: 80%;
+  
 }
 header.sticky .nadpis,
 header.sticky ul li a{
@@ -90,7 +91,7 @@ header.sticky .bar{
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: #fff;
+    background-color: black;
 }
 
 @media (max-width: 1200px) {
@@ -122,7 +123,9 @@ header.sticky .bar{
         padding: .5rem 1rem;
         margin-left: -55%;
         transform: translateX(70px);
-        bottom: 45px;     
+        bottom: 45px;
+        
+        
     }
 
     .navbar-links.active {
@@ -137,6 +140,11 @@ header.sticky .bar{
         position: relative;
     }
 }
+#zeme{
+    width: 100%;
+    position: absolute;
+    
+}
 #footer{
     background-color: rgb(20, 20, 20) !important;
     color: white;
@@ -148,7 +156,7 @@ button{
 .darkmode--activated h2 {
     color: rgb(223, 219, 219);
 }
-.darkmode--activated #p {
+.darkmode--activated p {
     color: rgb(223, 219, 219);
 }
 .darkmode--activated #footer{
@@ -165,10 +173,72 @@ button{
 .darkmode--activated header.sticky .bar{
     background-color: black;
 }
-.darkmode--activated .bar{
-    background-color: #fff;
+.darkmode--activated li{
+    color: rgb(223, 219, 219);
 }
-  ::-webkit-scrollbar {
+.darkmode--activated #myBtn{
+    background-color: rgb(255, 255, 255);
+    color: black;
+ }
+ #myBtn{
+     background-color: rgba(0, 0, 0, 0.801);
+     color: white;
+     border: rgba(0, 0, 0, 0.801);
+ }
+ .darkmode--activated #myBtn2{
+    background-color: rgb(255, 255, 255);
+    color: black;
+ }
+ #myBtn2{
+     background-color: rgba(0, 0, 0, 0.801);
+     color: white;
+     border: rgba(0, 0, 0, 0.801);;
+ }
+ .darkmode--activated #myBtn3{
+    background-color: rgb(255, 255, 255);
+    color: black;
+ }
+ #myBtn3{
+     background-color: rgba(0, 0, 0, 0.801);
+     color: white;
+     border: rgba(0, 0, 0, 0.801);
+ }
+ .darkmode--activated #myBtn4{
+    background-color: rgb(255, 255, 255);
+    color: black;
+ }
+ #myBtn4{
+     background-color: rgba(0, 0, 0, 0.801);
+     color: white;
+     border: rgba(0, 0, 0, 0.801);
+ }
+ #more {display: none;
+ }
+ #more2 {display: none;
+ }
+ #more3{display: none;
+ }
+ #more4{display: none;
+ }
+ #feijoada{
+     width: 100%;
+ }
+ #karneval{
+     width: 100%;
+ }
+ #fotbal{
+     width: 100%;
+ }
+ #ekonomika{
+     width: 100%;
+ }
+ #kuchyne{
+     width: 100%;
+ }
+ h2{
+     color: rgb(9, 156, 9) !important;
+ }
+ ::-webkit-scrollbar {
     width: 10px;
   }
   ::-webkit-scrollbar-track {
@@ -194,10 +264,7 @@ button{
   .darkmode--activated::-webkit-scrollbar-thumb{
     background:  rgb(223, 219, 219);
   }
-  h2{
-    color: rgb(170, 127, 74) !important;
-}
-#wikipedie{
+  #wikipedie{
     font-size: 15px;
     color: white;
 }
@@ -207,24 +274,4 @@ button{
 .darkmode--activated i{
     color: black;
 }
-#text{
-    color: #000;
-}
-#list-group{
-    background-color: #000;
-    border-radius: 15px;
 
-}
-.darkmode--activated #list-group{
-    background-color: rgb(255, 255, 255);
-}
-#postavy{
-    color: white;
-    font-weight: 500;
-}
-.darkmode--activated #postavy{
-    color: black;
-}
-h4{
-  color: rgb(170, 127, 74);
-}

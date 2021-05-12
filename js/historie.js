@@ -128,7 +128,7 @@ const options = {
             $(".card-text").text(hero.biography);
             $(".gallery").empty();
             for (let i = 0; i < hero.portraits.length; i++) {
-                $(".gallery").append(`<div class="col-sm-4"><img src="img/${hero.portraits[i]}" alt="" class="img-fluid"></div>`);        
+                $(".gallery").append(`<div class="col-sm-4"><img src="../img/${hero.portraits[i]}" alt="" class="img-fluid"></div>`);        
             }
         }
     

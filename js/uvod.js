@@ -88,28 +88,28 @@ function myFunction4() {
 }
 
 let kuchyne = document.getElementById('kuchyne');
-let images = ['img/feijoada.jpg', 'img/plzen.jpg','img/cachaça.jpg','img/kava.jpg','img/guarana.jpg'];
+let images = ['../img/feijoada.jpg', '../img/plzen.jpg','../img/cachaça.jpg','../img/kava.jpg','../img/guarana.jpg'];
 setInterval(function(){
   let random = Math.floor(Math.random() *5);
   kuchyne.src = images[random];
 }, 9000);
 
 let karneval = document.getElementById('karneval');
-let images2 = ['img/karneval.jpg','img/karneval2.jpg','img/karneval3.jpg','img/karneval4.jpg','img/karneval5.jpg'];
+let images2 = ['../img/karneval.jpg','../img/karneval2.jpg','../img/karneval3.jpg','../img/karneval4.jpg','../img/karneval5.jpg'];
 setInterval(function(){
   let random2 = Math.floor(Math.random() *5);
   karneval.src = images2[random2];
 }, 8000);
 
 let fotbal = document.getElementById('fotbal');
-let images3 = ['img/fotbal.jpg','img/futsal.jpg','img/olympic.jpg','img/fotbal4.jpg','img/jachting.jpg'];
+let images3 = ['../img/fotbal.jpg','../img/futsal.jpg','../img/olympic.jpg','../img/fotbal4.jpg','../img/jachting.jpg'];
 setInterval(function(){
   let random3 = Math.floor(Math.random() *5);
   fotbal.src = images3[random3];
 }, 10000);
 
 let ekonomika = document.getElementById('ekonomika');
-let images4 = ['img/ekonomika.jpg','img/mince.jpg','img/penize.jpg'];
+let images4 = ['../img/ekonomika.jpg','../img/mince.jpg','../img/penize.jpg'];
 setInterval(function(){
   let random4 = Math.floor(Math.random() *3);
   ekonomika.src = images4[random4];
