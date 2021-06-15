@@ -1,0 +1,243 @@
+body{
+    background-color: #fff !important;
+    min-height: 150vh;
+}
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   transition: 0.6s;
+   padding: 40px 100px;
+   z-index: 1;
+
+}
+header.sticky{
+    padding: 8px 100px;
+    height: 70px;
+    background: rgb(20, 20, 20) !important;
+}
+.nadpis
+{
+    position: absolute;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    bottom: 30px;
+    transform: translateX(100px);
+    font-size: 2em;
+    letter-spacing: 3px;
+    transition: 0.6s;
+
+}
+.avatar{
+    position: relative;
+    top: -13.5px;
+    width: 90px;
+    padding: 10px;
+    transition: 0.6s;
+}
+.navbar-links {
+    height: 100%;
+}
+.navbar-links ul{
+    display: flex;
+
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a{
+    position: relative;
+    display: block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    bottom: 5px;
+    letter-spacing: 4px;
+    transition: 0.6s;
+}
+.banner{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/map.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+header.sticky .nadpis,
+header.sticky ul li a{
+    color: #fff;
+}
+header.sticky .bar{
+    background-color: #fff;
+}
+
+.toggle-button {
+    position: absolute;
+    display: none;
+    top: 15.5px;
+    right: -80px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #000 ;
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+        color: #000;
+        z-index: 1;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+        margin-left: -55%;
+        transform: translateX(70px);
+        bottom: 45px;     
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .navbar .avatar{
+        margin-left:  -85%;
+    }
+    .navbar .nadpis{
+        margin-left: -55%;
+        bottom: 70.5px;
+        position: relative;
+    }
+}
+#footer{
+    background-color: rgb(20, 20, 20) !important;
+    color: white;
+    transform: translateY(-3px);
+}
+button{
+    z-index: 1;
+}
+.darkmode--activated #p {
+    color: rgb(223, 219, 219);
+}
+.darkmode--activated #footer{
+    background-color:rgb(255, 255, 255)  !important;
+    color: black;
+}
+.darkmode--activated header.sticky{
+    background-color: rgb(255, 255, 255)  !important;
+}
+.darkmode--activated header.sticky .nadpis,
+.darkmode--activated .sticky ul li a{
+    color: black;
+}
+.darkmode--activated header.sticky .bar{
+    background-color: black;
+}
+.darkmode--activated .bar{
+    background-color: #fff;
+}
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #fff; 
+    margin: 5px 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background:  rgb(20, 20, 20); 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background:  rgb(112, 112, 112);
+  }
+  .darkmode--activated::-webkit-scrollbar-track{
+    background: #000; 
+  }
+  .darkmode--activated::-webkit-scrollbar {
+    background-color: #000;
+  }
+  .darkmode--activated::-webkit-scrollbar-thumb:hover{
+    background:  rgb(148, 147, 147); 
+  }
+  .darkmode--activated::-webkit-scrollbar-thumb{
+    background:  rgb(223, 219, 219);
+  }
+#wikipedie{
+    font-size: 15px;
+    color: white;
+}
+#wiki{
+    width: 20px;
+}
+.darkmode--activated i{
+    color: black;
+}
+.darkmode--activated li a{
+    color: rgb(255, 255, 255);
+}
+.darkmode--activated .nadpis{
+    color: rgb(255, 255, 255);
+}
+.darkmode--activated #map{
+    stroke: black;
+    fill: rgb(155, 155, 155);
+    color: rgb(95, 94, 94);
+}
+/*.darkmode--activated rect{
+    fill: rgb(7, 121, 173);
+}
+*/
+.popover{
+    height: 42px;
+    border-width: 3px !important;
+    border-color: #000 !important;
+    
+}
+.darkmode--activated .popover{
+    border-color: #fff !important;
+}
+.darkmode--activated #text{
+    color: #fff;
+    background: #000 !important;
+}
+#nazev{
+    background: #000 !important;
+    color: #fff !important;
+    border-radius: 20px;
+}
+#text{
+    background-color: rgb(247, 245, 245) !important;
+    border-radius: 5px;
+}
+.darkmode--activated #nazev{
+    background: #fff !important;
+    color: black !important;
+}
